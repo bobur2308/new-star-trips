@@ -33,7 +33,7 @@
     }
   });
   function sendTelegram(name, email, text) {
-    const message = `Sizga yangi xabar bor ${name} dan pochtasi ${email}  matni ${text}`;
+    const message = `Sizga yangi xabar bor "${name}" dan pochtasi "${email}"  matni "${text}"`;
     const url = `https://api.telegram.org/bot${tokenTg}/sendMessage?chat_id=${chat_id}&text=${message}`;
     fetch(url)
       .then((res) => {
